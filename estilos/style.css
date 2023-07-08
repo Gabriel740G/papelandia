@@ -48,6 +48,10 @@ main > div.login > form > #usuario, #senha {
     margin-bottom: 30px;
 }
 
+.mostrarsenha {
+    transform: translate(-100px, -20px);
+}
+
 main > div.login > form > input[type=submit] {
     padding: 15px;
     width: 100px;
