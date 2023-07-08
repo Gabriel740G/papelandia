@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/registrovendas.css">
+    <link rel="shortcut icon" href="imagens/logo.jpg" type="image/x-icon">
     <title>Papelaria Papelandia</title>
 </head>
 <body>
-    
+    <div class="menulateral">
+        <img src="imagens/banner.jpg" alt="banner" class="banner">
+        <nav>
+            <ul>
+                <li><a href="home.html">Início</a></li>
+                <li>
+                    <details>
+                        <summary>Vendas</summary>
+                        <a href="#">Histórico de Vendas</a>
+                        <br>
+                        <a href="registrovendas.html">Registrar Vendas</a>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Produtos</summary>
+                        <a href="#">Produtos Registrados</a>
+                        <br>
+                        <a href="#">Registrar Produtos</a>
+                    </details>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <h2>Registre uma nova venda preenchendo os dados do formulário</h2>
+        <div class="cadastrar-produto">
+            <form action="" method="post">
+                <input type="text" name="produto" id="produto" placeholder="Qual é o produto?" required>
+                <br>
+                <input type="number" name="quantidade" id="quantidade" placeholder="Qual é a quantidade?" required>
+                <br>
+                <input type="number" name="valortotal" id="valortotal" placeholder="Valor Total:" required>
+                <br>
+                <label for="pagamentos">Qual foi a forma de pagamento?</label><br>
+                <select name="formas-pagamento" id="pagamentos">
+                    <option value="Dinheiro" selected>Dinheiro</option>
+                    <option value="Pix">Pix</option>
+                    <option value="Cartão de Crédito">Cartão de Crédito</option>
+                    <option value="Cartão de Débito">Cartão de Débito</option>
+                </select>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>
 </body>
 </html>
