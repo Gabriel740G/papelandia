@@ -40,6 +40,7 @@ a , summary {
     text-decoration: none;
     font-size: 18px;
     color: black;
+    cursor: pointer;
 }
 
 /* Configurações da parte principal */

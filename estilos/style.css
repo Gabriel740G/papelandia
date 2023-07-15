@@ -18,8 +18,8 @@ header {
 }
 
 .logo {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
 }
 
 h2 {
@@ -50,6 +50,14 @@ main > div.login > form > #usuario, #senha {
 
 .mostrarsenha {
     transform: translate(-100px, -20px);
+}
+
+.recuperar-senha {
+    text-decoration: none;
+    position: absolute;
+    top: 52%;
+    left: 54%;
+    color: blueviolet;
 }
 
 main > div.login > form > input[type=submit] {
