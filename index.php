@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="shortcut icon" href="imagens/logo.jpg" type="image/x-icon">
     <title>Papelaria Papelandia - Login</title>
+    <style>
+        #showpass, label {
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -17,7 +22,7 @@
     </header>
     <main>
         <div class="login">
-            <form action="" method="post">
+            <form action="testLogin.php" method="post">
                 <input type="text" name="user" id="usuario" placeholder="Digite seu nome de usuário:" required>
                 <br>
                 <input type="password" name="pass" id="senha" placeholder="Digite sua senha:" required>
@@ -26,11 +31,11 @@
                     <input type="checkbox" name="show" id="showpass" onclick="Aparecer()">
                     <label for="showpass">Mostrar senha</label>
                 </div>
-                <a href="#" class="recuperar-senha">Esqueceu a senha?</a>
+                <a href="recuperarsenha.php" class="recuperar-senha">Esqueceu a senha?</a>
                 <br>
-                <input type="submit" value="Entrar">
+                <input type="submit" name="submit" value="Entrar">
             </form>
-            <a href="cadastro.html">Não tem cadastro? Clique aqui e cadastre-se já!</a>
+            <a href="cadastro.php">Não tem cadastro? Clique aqui e cadastre-se já!</a>
         </div>
     </main>
 </body>

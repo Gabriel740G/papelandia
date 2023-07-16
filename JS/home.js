@@ -23,5 +23,3 @@ const hour = document.getElementById('hora')
 
 hour.innerHTML = `${horas}:${minutos}`
 
-
-

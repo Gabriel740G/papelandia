@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.table {
+    transform: translate(-30px, 10px);
+}
+
+div.menulateral {
+    display: none;
+}
+
+div.box-search {
+    display: none;
+}
+
+div.print {
+    display: none;
+}
+
+.acoes, .editar, .excluir {
+    display: none;
+}
