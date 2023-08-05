@@ -1,4 +1,5 @@
 <?php
+    session_start();
 
     if(isset($_POST['submit'])) {
         //print_r($_POST['user']);
@@ -17,6 +18,12 @@
         header('Location: historicovendas.php');
     }
 
+    if((!isset($_SESSION['user']) == true) and (!isset ($_SESSION['pass']) == true)) {
+        unset($_SESSION['user']);
+        unset($_SESSION['pass']);
+        header('Location: index.php');
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -24,7 +31,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/registrovendas.css">
-    <link rel="shortcut icon" href="imagens/logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
     <title>Papelaria Papelandia</title>
     <style>
         #formapag {
@@ -37,7 +44,7 @@
 </head>
 <body>
     <div class="menulateral">
-        <img src="imagens/banner.jpg" alt="banner" class="banner">
+        <img src="imagens/banner.jpeg" alt="banner" class="banner">
         <nav>
             <ul>
                 <li><a href="home.php">Início</a></li>

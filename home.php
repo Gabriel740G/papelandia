@@ -29,13 +29,12 @@
         top: 76%;
         left: 22%;
         display: flex;
-        
     }
     </style>
 </head>
 <body>
     <div class="menulateral">
-        <img src="imagens/banner.jpg" alt="banner" class="banner">
+        <img src="imagens/banner.jpeg" alt="banner" class="banner">
         <nav>
             <ul>
                 <li><a href="home.php">Início</a></li>

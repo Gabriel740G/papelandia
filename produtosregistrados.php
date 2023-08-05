@@ -8,6 +8,13 @@ if(!empty($_GET['search'])) {
 } else {
     $sql = "SELECT * FROM produtos ORDER BY id ASC";
 }
+
+if((!isset($_SESSION['user']) == true) and (!isset ($_SESSION['pass']) == true)) {
+    unset($_SESSION['user']);
+    unset($_SESSION['pass']);
+    header('Location: index.php');
+}
+
 $result = $conexao->query($sql);
 
 ?>
@@ -18,7 +25,7 @@ $result = $conexao->query($sql);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/produtosregistrados.css">
     <link rel="stylesheet" href="estilos/media-screen.css" media="print">
-    <link rel="shortcut icon" href="imagens/logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
     <title>Papelaria Papelandia</title>
     <style>
         table {
@@ -80,11 +87,14 @@ $result = $conexao->query($sql);
             left: 86%;
         }
 
+        .menulateral {
+            position: fixed;
+        }
     </style>
 </head>
 <body>
     <div class="menulateral">
-        <img src="imagens/banner.jpg" alt="banner" class="banner">
+        <img src="imagens/banner.jpeg" alt="banner" class="banner">
         <nav>
             <ul>
                 <li><a href="home.php">Início</a></li>

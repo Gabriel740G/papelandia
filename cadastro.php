@@ -23,7 +23,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/cadastro.css">
-    <link rel="shortcut icon" href="imagens/logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
     <title>Papelaria Papelandia - cadastre-se</title>
 </head>
 <body>
@@ -34,7 +34,7 @@
           </svg>
     </a>
     <header>
-        <img src="imagens/logo.jpg" alt="logo" class="logo">
+        <img src="imagens/logo.png" alt="logo" class="logo">
         <h2>Cadastre-se preenchendo o formulário abaixo!</h2>
     </header>
     <div class="cadastro">
